@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Book Store with OOP and String Template</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div id="store">
+      <h1>UBIQUM VUE BOOKSTORE with VUE</h1>
+      <div id="loader">
+        <div class="lds-ripple">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div id="books">
+
+        <div v-for="book in books" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <img :src="book.portada" :alt="book.portada">
+            </div>
+            <div class="back">
+              <h2>{{book.titulo}}</h2>
+              <span>{{book.descripcion}}</span>
+              <a :href="book.detalle">
+                <button class="btn">More Info</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="mainVue.js"></script>
+  </body>
+</html>
