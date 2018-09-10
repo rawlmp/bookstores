@@ -63,5 +63,4 @@ function BookStore() {
 }
 
 var store = new BookStore();
-
 store.getData();
