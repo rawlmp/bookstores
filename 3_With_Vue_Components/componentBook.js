@@ -4,12 +4,12 @@ Vue.component('book', {
   <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
       <div class="flipper">
           <div class="front">
-              <img :src="book.portada" :alt="book.portada">
+              <img :src="book.cover" :alt="book.cover">
           </div>
           <div class="back">
-              <h2>{{book.titulo}}</h2>
-              <span>{{book.descripcion}}</span>
-              <a :href="book.detalle"><button class="btn">More Info</button></a>
+              <h2>{{book.title}}</h2>
+              <span>{{book.description}}</span>
+              <a :href="book.detail"><button class="btn">More Info</button></a>
           </div>
       </div>
   </div>`,

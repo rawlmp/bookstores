@@ -3,7 +3,7 @@ function BookStore() {
 
   var that = this;
   //Variables
-  this.url = "https://api.myjson.com/bins/udbm5";
+  this.url = "https://api.myjson.com/bins/8zpvs";
 
   //Functions / Methods
   //You can use this arrow ()=>{} or the traditional function(){}
@@ -30,12 +30,12 @@ function BookStore() {
             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                 <div class="flipper">
                     <div class="front">
-                        <img src="${book.portada}" alt="${book.portada}">
+                        <img src="${book.cover}" alt="${book.title}">
                     </div>
                     <div class="back">
-                        <h2>${book.titulo}</h2>
-                        <span>${book.descripcion}</span>
-                        <a data-fancybox="gallery" href="${book.detalle}"><button class="btn">More Info</button></a>
+                        <h2>${book.title}</h2>
+                        <span>${book.description}</span>
+                        <a data-fancybox="gallery" href="${book.detail}"><button class="btn">More Info</button></a>
                     </div>
                 </div>
             </div>

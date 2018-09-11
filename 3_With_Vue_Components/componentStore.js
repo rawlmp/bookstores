@@ -5,7 +5,7 @@ Vue.component('store', {
   </div>`,
 
   mounted() {
-    fetch("https://api.myjson.com/bins/udbm5")
+    fetch("https://api.myjson.com/bins/8zpvs")
       .then(function(response) {
         return response.json()
       }).then(function(data) {

@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="books">
-    <Book v-for="book in books" :key="book.titulo" :book="book"></Book>
+    <Book v-for="book in books" :key="book.title" :book="book"></Book>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
     Book
   },
   mounted() {
-    fetch("https://api.myjson.com/bins/1h3vb3")
+    fetch("https://api.myjson.com/bins/8zpvs")
           .then(function(response) {
             return response.json()
           }).then(function(data) {
